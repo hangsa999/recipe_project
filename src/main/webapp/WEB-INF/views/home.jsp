@@ -14,7 +14,7 @@
 <%@include file="/WEB-INF/inc/top.jsp" %>
 
 ${dual}
-
+asdasdasd
 
 </body>
 </html>
