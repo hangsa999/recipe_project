@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="spring persnal preject">
+    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="잘못된 내용 커밋">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01git사용원칙.txt" beforeDir="false" afterPath="$PROJECT_DIR$/01git사용원칙.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "hangsa999"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7d0c99f5-8ca8-4317-adcc-0f40cb17aa75" />
+        <option name="url" value="https://github.com/hangsa999/recipe_project.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -54,7 +69,7 @@
     "Tomcat Server.Tomcat 9.0.83.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/pc33/IdeaProjects/recipe_project/src/main/webapp/WEB-INF",
+    "last_opened_file_path": "/home/pc33/IdeaProjects/recipe_project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,6 +83,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -170,7 +186,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704932123161</updated>
-      <workItem from="1704932124346" duration="2602000" />
+      <workItem from="1704932124346" duration="3511000" />
     </task>
     <task id="LOCAL-00001" summary="spring persnal preject">
       <option name="closed" value="true" />
@@ -196,15 +212,43 @@
       <option name="project" value="LOCAL" />
       <updated>1704934077192</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="spring persnal preject">
+      <option name="closed" value="true" />
+      <created>1704935267854</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704935267854</updated>
+    </task>
+    <task id="LOCAL-00005" summary="잘못된 내용 커밋">
+      <option name="closed" value="true" />
+      <created>1704935352840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704935352840</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="spring persnal preject" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring persnal preject" />
+    <MESSAGE value="잘못된 내용 커밋" />
+    <option name="LAST_COMMIT_MESSAGE" value="잘못된 내용 커밋" />
   </component>
 </project>

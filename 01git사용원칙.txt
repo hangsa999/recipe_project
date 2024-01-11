@@ -4,6 +4,8 @@
 4. update, reset, rebase, clone은 사용 금지
     reset, rebase, clone 대신 revert, merger, pull 사용
 5. 로컬 깃이랑 원격 깃 상태 생각하면서 작업하기
+6. revert는 돌아가려는 곳이 아니라 잘못 커밋한 부분을 선택해 revert 하는 것
 
 
 commit/push , checkout, pull, merge, revert
+
