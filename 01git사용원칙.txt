@@ -1,0 +1,9 @@
+01git사용원칙.txt1. 모르는 상태에서 yes or 파란색 버튼을 막 누르지 말자
+2. 커밋은 신중히 (내가 작업한 파일들만 커밋되는지 확인)
+3. 커밋, full 할 때 현재 브랜치 꼭 확인하기  (master에는 commit 안함)
+4. update, reset, rebase, clone은 사용 금지
+    reset, rebase, clone 대신 revert, merger, pull 사용
+5. 로컬 깃이랑 원격 깃 상태 생각하면서 작업하기
+
+
+commit/push , checkout, pull, merge, revert
