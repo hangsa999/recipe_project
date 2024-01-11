@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="잘못된 내용 커밋">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01git사용원칙.txt" beforeDir="false" afterPath="$PROJECT_DIR$/01git사용원칙.txt" afterDir="false" />
+    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="잘못 커밋한 내용을 revert 한 후 push">
+      <change afterPath="$PROJECT_DIR$/브랜치커밋용파일.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -67,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 9.0.83.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "documentation",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/pc33/IdeaProjects/recipe_project",
     "node.js.detected.package.eslint": "true",
@@ -186,7 +190,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704932123161</updated>
-      <workItem from="1704932124346" duration="3511000" />
+      <workItem from="1704932124346" duration="3710000" />
     </task>
     <task id="LOCAL-00001" summary="spring persnal preject">
       <option name="closed" value="true" />
@@ -228,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704935352840</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="잘못 커밋한 내용을 revert 한 후 push">
+      <option name="closed" value="true" />
+      <created>1704936178703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704936178703</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +261,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="spring persnal preject" />
     <MESSAGE value="잘못된 내용 커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="잘못된 내용 커밋" />
+    <MESSAGE value="잘못 커밋한 내용을 revert 한 후 push" />
+    <option name="LAST_COMMIT_MESSAGE" value="잘못 커밋한 내용을 revert 한 후 push" />
   </component>
 </project>
