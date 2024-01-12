@@ -10,13 +10,13 @@ import javax.inject.Inject;
 @Controller
 public class HomeController {
 
-@Inject
-IDao dao;
+    @Inject
+    IDao dao;
 
     @RequestMapping("/")
-    public String home(Model model){
+    public String home(Model model) {
         int dual = dao.dual();
-        model.addAttribute("dual",dual);
+        model.addAttribute("dual", dual);
         return "home";
     }
 }
