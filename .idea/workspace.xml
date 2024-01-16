@@ -2,17 +2,29 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="recipe_project:war exploded" />
+      <artifact name="spring:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="브랜치 두번째 커밋푸쉬">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="board 브랜치 시작">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/dao/IFreeBoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/service/FreeBoardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/service/IFreeBoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/vo/FreeBoardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/web/FreeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/common/vo/PagingVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/free/freeBoardList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/free/freeView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicClass.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/IDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IFreeBoardDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +36,16 @@
       <list>
         <option value="Interface" />
         <option value="Jsp File" />
-        <option value="Mybatis Mapper" />
         <option value="Class" />
+        <option value="Mybatis Mapper" />
+        <option value="JSP File(HTML5)" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="documentation" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,9 +89,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 9.0.83.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;board&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pc33/IdeaProjects/recipe_project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pc33/IdeaProjects/recipe_project/src/main/webapp/WEB-INF/views&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -92,24 +105,44 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/free" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/study/board/free" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.common.vo" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="recipe_project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="recipe_project" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.83" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.83" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="recipe_project:war exploded">
+        <artifact name="spring:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="35ae2847-9c54-4623-8d36-61214ab3142b" />
+        <option name="BASE_DIRECTORY_NAME" value="97f3115b-2779-48ff-b7d5-d5d06a8796cc" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -117,7 +150,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="42965" />
+        <option name="DEBUG_PORT" value="46055" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -182,7 +215,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="recipe_project:war exploded" />
+          <artifact name="spring:war exploded" />
         </option>
       </method>
     </configuration>
@@ -205,6 +238,11 @@
       <workItem from="1704932124346" duration="5324000" />
       <workItem from="1704944991186" duration="26000" />
       <workItem from="1705017668018" duration="600000" />
+      <workItem from="1705027175889" duration="3431000" />
+      <workItem from="1705364502599" duration="2558000" />
+      <workItem from="1705367072967" duration="415000" />
+      <workItem from="1705367796895" duration="164000" />
+      <workItem from="1705368061532" duration="220000" />
     </task>
     <task id="LOCAL-00001" summary="spring persnal preject">
       <option name="closed" value="true" />
@@ -270,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704936394638</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="board 브랜치 시작">
+      <option name="closed" value="true" />
+      <created>1705027343671</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705027343671</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +352,7 @@
     <MESSAGE value="잘못 커밋한 내용을 revert 한 후 push" />
     <MESSAGE value="documentation 브랜치&#10;커밋용 파일" />
     <MESSAGE value="브랜치 두번째 커밋푸쉬" />
-    <option name="LAST_COMMIT_MESSAGE" value="브랜치 두번째 커밋푸쉬" />
+    <MESSAGE value="board 브랜치 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="board 브랜치 시작" />
   </component>
 </project>
