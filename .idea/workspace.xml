@@ -9,22 +9,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="board 브랜치 시작">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/dao/IFreeBoardDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/service/FreeBoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/service/IFreeBoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/vo/FreeBoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/board/free/web/FreeController.java" afterDir="false" />
+    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="다시 시작.">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/common/util/CookieUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/study/common/vo/PagingVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/free/freeBoardList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/free/freeView.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/common/vo/ResultMessageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/exception/BizAccessFailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/exception/BizDuplicateKeyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/exception/BizException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/exception/BizNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/exception/BizPasswordNotMatchedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/exception/DaoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/dao/IFreeBoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/service/FreeBoardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/service/IFreeBoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/vo/FreeBoardSearchVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/vo/FreeBoardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/web/FreeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/login/ILoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/login/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/login/vo/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/login/web/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/member/dao/IMemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/member/service/IMemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/member/vo/MemberSearchVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/member/vo/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/member/web/JoinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/member/web/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/reply/dao/IReplyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/reply/service/IReplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/reply/service/IReplyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/reply/vo/ReplyVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/reply/web/ReplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IFreeBoardDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IMemberDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IReplyDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeEdit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeView.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/replyList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/IDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IFreeBoardDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/study/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/study/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/IDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,39 +113,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.83.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;board&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pc33/IdeaProjects/recipe_project/src/main/webapp/WEB-INF/views&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.83.executor": "Run",
+    "git-widget-placeholder": "board",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/pc33/IdeaProjects/recipe_project/src/main/java/com/study",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/free" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/study" />
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/study/board/free" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/src/main/java/study" />
+      <recent name="$PROJECT_DIR$/src/main/java/study/freeBoard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.common.util" />
+      <recent name="study.common.vo" />
       <recent name="com.study.common.vo" />
     </key>
   </component>
@@ -243,6 +277,8 @@
       <workItem from="1705367072967" duration="415000" />
       <workItem from="1705367796895" duration="164000" />
       <workItem from="1705368061532" duration="220000" />
+      <workItem from="1705371026598" duration="238000" />
+      <workItem from="1705371291706" duration="5836000" />
     </task>
     <task id="LOCAL-00001" summary="spring persnal preject">
       <option name="closed" value="true" />
@@ -316,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705027343671</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="다시 시작.">
+      <option name="closed" value="true" />
+      <created>1705371254629</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705371254629</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,6 +397,7 @@
     <MESSAGE value="documentation 브랜치&#10;커밋용 파일" />
     <MESSAGE value="브랜치 두번째 커밋푸쉬" />
     <MESSAGE value="board 브랜치 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="board 브랜치 시작" />
+    <MESSAGE value="다시 시작." />
+    <option name="LAST_COMMIT_MESSAGE" value="다시 시작." />
   </component>
 </project>

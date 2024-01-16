@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.study.freeBoard.dao.IFreeBoardDao">
+
+    <select id="getTotalRowCount" resultType="java.lang.Integer">
+        SELECT count(*)
+        FROM free_board
+        WHERE bo_del_yn = 'N'
+    </select>
+
+    <select id="getBoardList" resultType="com.study.freeBoard.vo.FreeBoardVO">
+        select * from
+            ( select a.*, rownum AS rnum from (
+                                                  SELECT bo_no,
+                                                         bo_title,
+                                                         bo_category,
+                                                         bo_writer,
+                                                         bo_content,
+                                                         bo_recipe_no,
+                                                         bo_hit,
+                                                         to_char(bo_reg_date, 'YYYY-MM-DD') AS bo_reg_date,
+                                                         to_char(bo_mod_date, 'YYYY-MM-DD') AS bo_mod_date,
+                                                         bo_del_yn
+                                                  FROM boards
+                                                  WHERE bo_del_yn = 'N'
+                                                  ORDER BY bo_no desc
+                                              ) a ) b
+        WHERE rnum between #{paging.firstRow} and #{paging.lastRow}
+    </select>
+
+    <select id="getBoard" resultType="com.study.freeBoard.vo.FreeBoardVO" parameterType="int">
+        SELECT bo_no,
+               bo_title,
+               bo_category,
+               bo_writer,
+               bo_content,
+               bo_recipe_no,
+               bo_hit,
+               to_char(bo_reg_date, 'YYYY-MM-DD') AS bo_reg_date,
+               to_char(bo_mod_date, 'YYYY-MM-DD') AS bo_mod_date,
+               bo_del_yn
+        FROM boards
+        WHERE bo_no = #{boNo}
+    </select>
+
+
+    <update id="increaseHit"></update>
+
+    <update id="updateBoard" parameterType="com.study.freeBoard.vo.FreeBoardVO">
+        UPDATE boards
+        SET bo_title=#{boTitle},
+            bo_category=#{boCategory},
+            bo_content=#{boContent},
+            bo_recipe_no=#{boRecipeNo},
+            bo_mod_date=sysdate
+        WHERE bo_no = #{boNo}
+    </update>
+
+    <delete id="deleteBoard" parameterType="com.study.freeBoard.vo.FreeBoardVO">
+        UPDATE boards
+        SET bo_del_yn='Y'
+        WHERE bo_no = #{boNo}
+    </delete>
+
+    <insert id="insertBoard" parameterType="com.study.freeBoard.vo.FreeBoardVO">
+        <selectKey keyColumn="bo_no" keyProperty="boNo" order="BEFORE" resultType="int">
+        SELECT
+            SEQ_BOARD_NO.nextval,
+            SEQ_RECIPE_NO.nextval
+        FROM dual
+        </selectKey>
+        INSERT INTO boards (bo_no, bo_title, bo_category,
+                            bo_writer, bo_content, bo_recipe_no,
+                            bo_hit, bo_reg_date, bo_mod_date,
+                            bo_del_yn)
+        VALUES (#{boNo}, #{boTitle}, #{boCategory},
+                #{boWriter}, #{boContent}, #{boRecipeNo},
+                0,
+                sysdate,
+                sysdate,
+                'N')
+    </insert>
+</mapper>

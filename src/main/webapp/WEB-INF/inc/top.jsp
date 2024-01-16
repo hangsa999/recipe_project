@@ -1,4 +1,4 @@
-<%-- <%@page import="com.study.login.vo.UserVO"%> --%>
+<%-- <%@page import="com.com.study.login.vo.UserVO"%> --%>
 <%@page import="java.util.List" %>
 <%@ page language="java"
          pageEncoding="UTF-8" %>
@@ -25,7 +25,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">게시판
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/free/freeList.wow">자유게시판</a></li>
+                        <li><a href="/freeBoard/freeList.wow">자유게시판</a></li>
                         <li><a href="#">자료실</a></li>
                         <li><a href="#">공지사항</a></li>
                         <li><a href="/member/memberList.wow">회원목록</a></li>
