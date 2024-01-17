@@ -1,17 +1,14 @@
 <%@ page language="java"
 
-         pageEncoding="UTF-8"%>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- 부트스트랩 css -->
-    <link href="<%=request.getContextPath() %>/resources/bootstrap-3.3.2/css/bootstrap.css" rel="stylesheet">
-    
-    <!-- jQuery -->
-    <script src="<%=request.getContextPath() %>/resources/js/jquery1.11.2.js"></script>
-    
-    <!-- 부트스트랩 js -->
-    <script src="<%=request.getContextPath() %>/resources/bootstrap-3.3.2/js/bootstrap.js"></script>
-    
-    
+         pageEncoding="UTF-8" %>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="description" content=""/>
+<meta name="author" content=""/>
+<title>다이어트 레시피</title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="/resource/assets/favicon.ico"/>
+<!-- Bootstrap icons-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="/resource/css/styles.css" rel="stylesheet"/>

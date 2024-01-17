@@ -2,78 +2,34 @@
 <%@page import="java.util.List" %>
 <%@ page language="java"
          pageEncoding="UTF-8" %>
-
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">areum home</a>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">다이어트 레시피</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <%--                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>--%>
+                <%--                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>--%>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">레시피게시판</a></li>
+                        <%--                        <li><hr class="dropdown-divider" /></li>--%>
+                        <li><a class="dropdown-item" href="/freeBoard/freeList.wow">자유게시판</a></li>
+                        <li><a class="dropdown-item" href="#!">문의게시판</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <%--                <button class="btn btn-outline-dark" type="submit">--%>
+                <%--                    로그인--%>
+                <%--                </button>--%>
+                <a class="nav-link" href="login/login.wow" role="button">로그인</a>
+            </form>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">게시판
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="/freeBoard/freeList.wow">자유게시판</a></li>
-                        <li><a href="#">자료실</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="/member/memberList.wow">회원목록</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="/login/login.wow">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                       aria-expanded="false">${USER_INFO.userName} 님 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">
-                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                            &nbsp;&nbsp;My page
-                        </a></li>
-                        <li><a href="#">
-                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                            &nbsp;&nbsp;비밀번호 변경
-                        </a></li>
-                        <li><a href="#">
-                            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-                            &nbsp;&nbsp;1:1 문의게시판
-                        </a></li>
-                        <li class="divider"></li>
-                        <li><a href="/login/logout.wow">
-                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                            &nbsp;&nbsp;로그아웃
-                        </a></li>
-                    </ul>
-                </li>
-
-
-            </ul>
-        </div><!--/.nav-collapse -->
     </div>
 </nav>
-
-
-<br><br><br><br><br><br>
-
-
-
-		
- 
