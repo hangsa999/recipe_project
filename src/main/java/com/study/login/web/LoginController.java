@@ -1,7 +1,7 @@
 package com.study.login.web;
 
 import com.study.common.util.CookieUtils;
-import com.study.login.ILoginService;
+import com.study.login.service.ILoginService;
 import com.study.login.vo.UserVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,7 +29,7 @@ public class LoginController {
     }
 
     @PostMapping("/login/login.wow")
-    public String loginPost(Model model, @RequestParam("userId") String id, @RequestParam("userPass") String pw, @RequestParam("rememberMe") String saveId, HttpServletRequest req, HttpServletResponse resp, HttpSession session) throws Exception {
+    public String loginPost(Model model, @RequestParam("userId") String id, @RequestParam("userPass") String pw, @RequestParam(value = "rememberMe", required = false) String saveId, HttpServletRequest req, HttpServletResponse resp, HttpSession session) throws Exception {
         if (saveId == null) {  //아이디기억하기체크안함
             CookieUtils cookieUtils = new CookieUtils(req);
             if (cookieUtils.exists("SAVE_ID")) {
@@ -41,15 +41,16 @@ public class LoginController {
 
         boolean nonInput = (id == null || id.isEmpty()) || (pw == null || pw.isEmpty());
         if (nonInput) {
-            return "redirect:/login/login.wow?msg=" + URLEncoder.encode("입력안했어요", "utf-8");
+            return "redirect:/login/login.wow?msg=" + URLEncoder.encode("아이디 또는 비밀번호를 입력해주세요.", "utf-8");
         }
 
         UserVO user = loginService.getUser(id, pw);
+
         if (user == null) {
-            return "redirect:/login/login.wow?msg=" + URLEncoder.encode("아이디 또는 비밀번호가 틀림", "utf-8");
+            return "redirect:/login/login.wow?msg=" + URLEncoder.encode("아이디 또는 비밀번호가 틀렸습니다.", "utf-8");
         }
 
-        // 로그인 성공
+        // 로그인 성공 후
         if (saveId.equals("Y")) {
             resp.addCookie(CookieUtils.createCookie("SAVE_ID", id, "/", 3600 * 24 * 7));
         }

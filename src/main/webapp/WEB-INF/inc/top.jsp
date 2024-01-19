@@ -1,11 +1,13 @@
-<%-- <%@page import="com.com.study.login.vo.UserVO"%> --%>
 <%@page import="java.util.List" %>
 <%@ page language="java"
          pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#!">다이어트 레시피</a>
+        <a class="navbar-brand" href="../">다이어트 레시피</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-icon"></span></button>
@@ -25,10 +27,15 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <%--                <button class="btn btn-outline-dark" type="submit">--%>
-                <%--                    로그인--%>
-                <%--                </button>--%>
-                <a class="nav-link" href="login/login.wow" role="button">로그인</a>
+                <c:if test="${empty USER_INFO}">
+                <a class="nav-link" href="/login/login.wow" role="button">로그인</a>
+                </c:if>
+
+                <c:if test="${not empty USER_INFO}">
+                    ${USER_INFO.userId} 님, 환영합니다. &nbsp;
+                <a class="nav-link" href="/login/logout.wow" role="button">로그아웃</a>
+                </c:if>
+
             </form>
         </div>
     </div>

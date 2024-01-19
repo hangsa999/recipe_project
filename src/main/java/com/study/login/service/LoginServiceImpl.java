@@ -1,4 +1,4 @@
-package com.study.login;
+package com.study.login.service;
 
 import com.study.login.vo.UserVO;
 import com.study.member.dao.IMemberDao;

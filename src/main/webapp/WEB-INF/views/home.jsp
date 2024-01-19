@@ -1,6 +1,7 @@
 <%@page import="java.util.List" %>
 <%@ page language="java"
          pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -119,14 +120,14 @@
 
 <!-- Footer-->
 <footer class="py-5 bg-dark">
-    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+    <div class="container"><p class="m-0 text-center text-white">Copyright 2024. 이지우 all rights reserved.</p></div>
 </footer>
 
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="/resource/js/scripts.js"></script>
 
 </body>
 </html>

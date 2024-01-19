@@ -9,30 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="다시 시작.">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/scripts.js" afterDir="false" />
+    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="2024.01.17. 부트스트랩 템플릿 적용&#10;(현재 db와 쿼리문 일치하지 않는 상태)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/login/ILoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/login/service/ILoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/login/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/login/service/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/login/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/login/web/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery1.11.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery1.11.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 9.0.83.executor": "Run",
+    "Tomcat Server.login.jsp.executor": "Run",
     "git-widget-placeholder": "board",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/pc33/IdeaProjects/recipe_project/src/main/webapp/WEB-INF/views",
@@ -257,7 +245,10 @@
       <workItem from="1705371026598" duration="238000" />
       <workItem from="1705371291706" duration="5836000" />
       <workItem from="1705377193120" duration="685000" />
-      <workItem from="1705458830512" duration="5091000" />
+      <workItem from="1705458830512" duration="5751000" />
+      <workItem from="1705544718041" duration="26000" />
+      <workItem from="1705546114008" duration="748000" />
+      <workItem from="1705622523975" duration="10943000" />
     </task>
     <task id="LOCAL-00001" summary="spring persnal preject">
       <option name="closed" value="true" />
@@ -347,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705379723740</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2024.01.17. 부트스트랩 템플릿 적용&#10;(현재 db와 쿼리문 일치하지 않는 상태)">
+      <option name="closed" value="true" />
+      <created>1705465796436</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705465796436</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +384,7 @@
     <MESSAGE value="브랜치 두번째 커밋푸쉬" />
     <MESSAGE value="board 브랜치 시작" />
     <MESSAGE value="다시 시작." />
-    <option name="LAST_COMMIT_MESSAGE" value="다시 시작." />
+    <MESSAGE value="2024.01.17. 부트스트랩 템플릿 적용&#10;(현재 db와 쿼리문 일치하지 않는 상태)" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024.01.17. 부트스트랩 템플릿 적용&#10;(현재 db와 쿼리문 일치하지 않는 상태)" />
   </component>
 </project>
