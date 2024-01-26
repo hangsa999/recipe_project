@@ -9,17 +9,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="2024.01.17. 부트스트랩 템플릿 적용&#10;(현재 db와 쿼리문 일치하지 않는 상태)">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="c71272a2-0f7c-487c-8003-1cfd7e8dc07c" name="Changes" comment="2024.01.19. 부트스트랩 템플릿 적용&#10;로그인 화면 정리&#10;(현재 db와 쿼리문 일치하지 않는 상태)">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/regist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/bootstrap-3.3.2/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery1.11.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/jquery1.11.2.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/login/ILoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/login/service/ILoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/login/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/login/service/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/dao/IFreeBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/dao/IFreeBoardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/service/FreeBoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/service/FreeBoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/service/IFreeBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/service/IFreeBoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/vo/FreeBoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/vo/FreeBoardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/web/FreeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/freeBoard/web/FreeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/login/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/login/web/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/reply/web/ReplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/reply/web/ReplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IFreeBoardDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/IFreeBoardDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/freeView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/replyList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeBoard/replyList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resource/js/scripts.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,36 +103,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 9.0.83.executor": "Run",
-    "Tomcat Server.login.jsp.executor": "Run",
-    "git-widget-placeholder": "board",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/pc33/IdeaProjects/recipe_project/src/main/webapp/WEB-INF/views",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.83.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.freeView.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.login.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.regist.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;board&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pc33/IdeaProjects/recipe_project/src/main/webapp/resource&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resource" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/inc" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/study" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resource/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
@@ -248,7 +276,12 @@
       <workItem from="1705458830512" duration="5751000" />
       <workItem from="1705544718041" duration="26000" />
       <workItem from="1705546114008" duration="748000" />
-      <workItem from="1705622523975" duration="10943000" />
+      <workItem from="1705622523975" duration="11702000" />
+      <workItem from="1705979427536" duration="4797000" />
+      <workItem from="1706141316666" duration="12262000" />
+      <workItem from="1706155567601" duration="132000" />
+      <workItem from="1706227483281" duration="3317000" />
+      <workItem from="1706232651147" duration="3170000" />
     </task>
     <task id="LOCAL-00001" summary="spring persnal preject">
       <option name="closed" value="true" />
@@ -346,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705465796436</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2024.01.19. 부트스트랩 템플릿 적용&#10;로그인 화면 정리&#10;(현재 db와 쿼리문 일치하지 않는 상태)">
+      <option name="closed" value="true" />
+      <created>1705639903668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705639903668</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +426,7 @@
     <MESSAGE value="board 브랜치 시작" />
     <MESSAGE value="다시 시작." />
     <MESSAGE value="2024.01.17. 부트스트랩 템플릿 적용&#10;(현재 db와 쿼리문 일치하지 않는 상태)" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024.01.17. 부트스트랩 템플릿 적용&#10;(현재 db와 쿼리문 일치하지 않는 상태)" />
+    <MESSAGE value="2024.01.19. 부트스트랩 템플릿 적용&#10;로그인 화면 정리&#10;(현재 db와 쿼리문 일치하지 않는 상태)" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024.01.19. 부트스트랩 템플릿 적용&#10;로그인 화면 정리&#10;(현재 db와 쿼리문 일치하지 않는 상태)" />
   </component>
 </project>

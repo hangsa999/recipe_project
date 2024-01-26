@@ -8,31 +8,17 @@ import java.util.List;
 public class FreeBoardVO {
     private int boNo;                       /* 글 번호 */
     private String boTitle;                 /* 글 제목 */
-    private String boCategory;              /* 글 분류 코드 */
     private String boWriter;                /* 작성자명 */
-    private String boPass;                  /* 비밀번호 */
     private String boContent;               /* 글 내용 */
     private int boHit;                      /* 조회수 */
     private String boRegDate;               /* 등록 일자 */
     private String boModDate;               /* 수정 일자 */
     private String boDelYn;                 /* 삭제 여부 */
 
-    private int boRecipeNo;
-
-    private String boCategoryNm;            /* 글 분류 이름 */
-
     @Override
     public String toString() {
         return ToStringBuilder
                 .reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
-    }
-
-    public int getBoRecipeNo() {
-        return boRecipeNo;
-    }
-
-    public void setBoRecipeNo(int boRecipeNo) {
-        this.boRecipeNo = boRecipeNo;
     }
 
     public int getBoNo() {
@@ -51,28 +37,12 @@ public class FreeBoardVO {
         this.boTitle = boTitle;
     }
 
-    public String getBoCategory() {
-        return boCategory;
-    }
-
-    public void setBoCategory(String boCategory) {
-        this.boCategory = boCategory;
-    }
-
     public String getBoWriter() {
         return boWriter;
     }
 
     public void setBoWriter(String boWriter) {
         this.boWriter = boWriter;
-    }
-
-    public String getBoPass() {
-        return boPass;
-    }
-
-    public void setBoPass(String boPass) {
-        this.boPass = boPass;
     }
 
     public String getBoContent() {
@@ -115,11 +85,4 @@ public class FreeBoardVO {
         this.boDelYn = boDelYn;
     }
 
-    public String getBoCategoryNm() {
-        return boCategoryNm;
-    }
-
-    public void setBoCategoryNm(String boCategoryNm) {
-        this.boCategoryNm = boCategoryNm;
-    }
 }

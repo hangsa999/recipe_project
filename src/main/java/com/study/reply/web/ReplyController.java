@@ -44,6 +44,7 @@ public class ReplyController {
     @RequestMapping("/reply/replyModify")
     public void replyModify(@ModelAttribute ReplyVO reply) {
         try {
+            System.out.println(reply);
             replyService.modifyReply(reply);
         } catch (BizNotFoundException e) {
             e.printStackTrace();

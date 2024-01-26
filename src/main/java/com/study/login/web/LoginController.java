@@ -64,4 +64,9 @@ public class LoginController {
         session.removeAttribute("USER_INFO");
         return "redirect:/";
     }
+
+    @GetMapping("/login/regist.wow")
+    public String registGet(Model model) {
+        return "login/regist";
+    }
 }

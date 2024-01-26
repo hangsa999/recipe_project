@@ -10,7 +10,7 @@ import com.study.freeBoard.vo.FreeBoardVO;
 import java.util.List;
 
 public interface IFreeBoardService {
-	public List<FreeBoardVO> getBoardList(PagingVO paging, FreeBoardSearchVO search);
+	public List<FreeBoardVO> getBoardList(PagingVO paging);
 	public FreeBoardVO getBoard(int boNo)  throws BizNotFoundException;
 	public void modifyBoard(FreeBoardVO freeBoard)
 			throws BizPasswordNotMatchedException;

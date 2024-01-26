@@ -9,6 +9,9 @@
 <%@ page import="com.study.exception.BizNotFoundException" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+    request.setCharacterEncoding("UTF-8");
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -25,7 +28,7 @@
             자유게시판 - <small>글 보기</small>
         </h3>
     </div>
-    <table class="table table-striped table-bordered">
+    <table class="table table-bordered">
         <tbody>
         <tr>
             <th>글번호</th>
@@ -34,10 +37,6 @@
         <tr>
             <th>글제목</th>
             <td>${freeBoard.boTitle}</td>
-        </tr>
-        <tr>
-            <th>글분류</th>
-            <td>${freeBoard.boCategoryNm}</td>
         </tr>
         <tr>
             <th>작성자명</th>
@@ -54,7 +53,7 @@
             <td>${freeBoard.boHit}</td>
         </tr>
         <tr>
-            <th>최근등록일자</th>
+            <th>최근수정일자</th>
             <td>${freeBoard.boRegDate}</td>
         </tr>
         <tr>
@@ -110,27 +109,6 @@
 
     <!-- // START : 댓글 목록 영역  -->
     <div id="id_reply_list_area">
-<%--        <div class="row">--%>
-<%--            <div class="col-sm-2 text-right">홍길동</div>--%>
-<%--            <div class="col-sm-6">--%>
-<%--                <pre>내용</pre>--%>
-<%--            </div>--%>
-<%--            <div class="col-sm-2">12/30 23:45</div>--%>
-<%--            <div class="col-sm-2">--%>
-<%--                <button name="btn_reply_edit" type="button"--%>
-<%--                        class=" btn btn-sm btn-info" onclick="fn_modify()">수정</button>--%>
-<%--                <button name="btn_reply_delete" type="button"--%>
-<%--                        class="btn btn-sm btn-danger">삭제</button>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--        <div class="row">--%>
-<%--            <div class="col-sm-2 text-right">그댄 먼곳만 보네요</div>--%>
-<%--            <div class="col-sm-6">--%>
-<%--                <pre> 롤링롤링롤링롤링</pre>--%>
-<%--            </div>--%>
-<%--            <div class="col-sm-2">11/25 12:45</div>--%>
-<%--            <div class="col-sm-2"></div>--%>
-<%--        </div>--%>
         <div data-page="1"></div>
     </div>
     <!-- // END : 댓글 목록 영역  -->
@@ -176,7 +154,15 @@
 
 </div>
 <!-- reply container -->
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core theme JS-->
+<script src="/resource/js/jquery1.11.2.js"></script>
+
 </body>
+
 <script>
     let param = {"curPage": 1, "reCategory": "FREE", "reParentNo": ${freeBoard.boNo}};
 
@@ -221,7 +207,7 @@
         if (id != "") {
             $("textarea[name='reContent']").removeAttr("readonly");
         }
-
+        console.log(id)
         // 더보기 버튼
         $("#id_reply_list_more").on("click", function (e) {
             replyListLoad();
@@ -253,7 +239,7 @@
 
         });// 등록버튼
 
-        function fn_modify() {}
+
         // 펑션 만들기
         //수정버튼 : 댓글 영역안에 있는 수정버튼만 이벤트 등록
         $("#id_reply_list_area").on("click", 'button[name="btn_reply_edit"]', function (e) {

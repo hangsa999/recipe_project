@@ -4,27 +4,27 @@
 
     <select id="getTotalRowCount" resultType="java.lang.Integer">
         SELECT count(*)
-        FROM free_board
+        FROM boards
         WHERE bo_del_yn = 'N'
     </select>
 
     <select id="getBoardList" resultType="com.study.freeBoard.vo.FreeBoardVO">
         select * from
             ( select a.*, rownum AS rnum from (
-                                                  SELECT bo_no,
-                                                         bo_title,
-                                                         bo_category,
-                                                         bo_writer,
-                                                         bo_content,
-                                                         bo_recipe_no,
-                                                         bo_hit,
-                                                         to_char(bo_reg_date, 'YYYY-MM-DD') AS bo_reg_date,
-                                                         to_char(bo_mod_date, 'YYYY-MM-DD') AS bo_mod_date,
-                                                         bo_del_yn
-                                                  FROM boards
-                                                  WHERE bo_del_yn = 'N'
-                                                  ORDER BY bo_no desc
-                                              ) a ) b
+                                                SELECT bo_no,
+                                                bo_title,
+                                                bo_category,
+                                                bo_writer,
+                                                bo_content,
+                                                bo_hit,
+                                                to_char(bo_reg_date, 'YYYY-MM-DD') AS bo_reg_date,
+                                                to_char(bo_mod_date, 'YYYY-MM-DD') AS bo_mod_date,
+                                                bo_del_yn
+                                                FROM boards
+                                                WHERE bo_del_yn = 'N'
+                                                ORDER BY bo_no desc
+                                                ) a
+            ) b
         WHERE rnum between #{paging.firstRow} and #{paging.lastRow}
     </select>
 
@@ -34,13 +34,14 @@
                bo_category,
                bo_writer,
                bo_content,
-               bo_recipe_no,
                bo_hit,
                to_char(bo_reg_date, 'YYYY-MM-DD') AS bo_reg_date,
                to_char(bo_mod_date, 'YYYY-MM-DD') AS bo_mod_date,
                bo_del_yn
         FROM boards
-        WHERE bo_no = #{boNo}
+        WHERE 1 = 1
+        AND bo_no = #{boNo}
+        AND bo_category = 'FREE'
     </select>
 
 
@@ -65,19 +66,14 @@
     <insert id="insertBoard" parameterType="com.study.freeBoard.vo.FreeBoardVO">
         <selectKey keyColumn="bo_no" keyProperty="boNo" order="BEFORE" resultType="int">
         SELECT
-            SEQ_BOARD_NO.nextval,
-            SEQ_RECIPE_NO.nextval
+            SEQ_BOARD_NO.nextval
         FROM dual
         </selectKey>
         INSERT INTO boards (bo_no, bo_title, bo_category,
-                            bo_writer, bo_content, bo_recipe_no,
-                            bo_hit, bo_reg_date, bo_mod_date,
-                            bo_del_yn)
-        VALUES (#{boNo}, #{boTitle}, #{boCategory},
-                #{boWriter}, #{boContent}, #{boRecipeNo},
-                0,
-                sysdate,
-                sysdate,
-                'N')
+                            bo_writer, bo_content, bo_hit,
+                            bo_reg_date, bo_del_yn)
+        VALUES (#{boNo}, #{boTitle}, 'FREE',
+                #{boWriter}, #{boContent}, 0,
+                sysdate, 'N')
     </insert>
 </mapper>

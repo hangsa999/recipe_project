@@ -21,8 +21,8 @@ public class FreeController {
     IFreeBoardService freeBoardService;
 
     @RequestMapping("/freeBoard/freeList.wow")
-    public String freeList(Model model, @ModelAttribute("paging") PagingVO paging, @ModelAttribute("search") FreeBoardSearchVO search) {
-        List<FreeBoardVO> freeBoardList = freeBoardService.getBoardList(paging, search);
+    public String freeList(Model model, @ModelAttribute("paging") PagingVO paging) {
+        List<FreeBoardVO> freeBoardList = freeBoardService.getBoardList(paging);
         model.addAttribute("freeBoardList", freeBoardList);
         return "freeBoard/freeList";
     }
@@ -95,10 +95,8 @@ public class FreeController {
 
     @RequestMapping("/freeBoard/freeRegist.wow")
     public String freeRegist(Model model, FreeBoardVO freeBoard){
-        freeBoardService.registBoard(freeBoard);
-        ResultMessageVO resultMessageVO = new ResultMessageVO();
-        resultMessageVO.messageSetting(true, "freeRegist 등록", "성공", "/freeBoard/freeList.wow", "목록으로");
-        model.addAttribute("resultMessageVO", resultMessageVO);
-        return "common/message";
+        System.out.println(freeBoard);
+//        freeBoardService.registBoard(freeBoard);
+        return "freeBoard/freeList";
     }
 }

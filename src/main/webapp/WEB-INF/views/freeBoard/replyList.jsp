@@ -20,7 +20,7 @@
     <div class="col-sm-2">
         <c:if test="${reply.reMemId == USER_INFO.userId}">
             <button name="btn_reply_edit" type="button"
-                    class=" btn btn-sm btn-info" onclick="fn_modify()">수정
+                    class=" btn btn-sm btn-info">수정
             </button>
             <button name="btn_reply_delete" type="button"
                     class="btn btn-sm btn-danger">삭제

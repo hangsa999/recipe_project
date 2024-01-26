@@ -19,10 +19,9 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">레시피게시판</a></li>
+                        <li><a class="dropdown-item" href="/recipeBoard/recipeList.wow">레시피게시판</a></li>
                         <%--                        <li><hr class="dropdown-divider" /></li>--%>
                         <li><a class="dropdown-item" href="/freeBoard/freeList.wow">자유게시판</a></li>
-                        <li><a class="dropdown-item" href="#!">문의게시판</a></li>
                     </ul>
                 </li>
             </ul>

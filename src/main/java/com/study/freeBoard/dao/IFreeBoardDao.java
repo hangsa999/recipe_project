@@ -11,9 +11,9 @@ import java.util.List;
 @Mapper
 public interface IFreeBoardDao {
 
-    public int getTotalRowCount(@Param("paging") PagingVO paging, @Param("search") FreeBoardSearchVO search);
+    public int getTotalRowCount(@Param("paging") PagingVO paging);
 
-    public List<FreeBoardVO> getBoardList(@Param("paging") PagingVO paging, @Param("search") FreeBoardSearchVO search);
+    public List<FreeBoardVO> getBoardList(@Param("paging") PagingVO paging);
 
     public FreeBoardVO getBoard(int boNo);
 
